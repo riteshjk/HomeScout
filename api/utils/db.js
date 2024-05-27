@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const connectDb = () =>{
-    mongoose.connect(process.env.MONGO_URI);
+    mongoose.connect(process.env.MONGO_URL);
 }
 
 export default connectDb
